@@ -1,0 +1,124 @@
+{
+  "dataset": "diabetes",
+  "file": "diabetes_dataset.csv",
+  "params": {
+    "DMC-KMeans": {
+      "n_clusters": 27
+    },
+    "DMC-CMeans": {
+      "fuzzifier": 1.17,
+      "n_clusters": 29
+    },
+    "DMC-DiagGMM": {
+      "n_components": 39,
+      "reg_covar": 0.4718180085166576
+    },
+    "DMC-DiagGMM-ClassWise": {
+      "n_components_per_class": 32,
+      "reg_covar": 2.2755692928179276
+    },
+    "DMC-Tree-DiagGMM": {
+      "max_depth": 4,
+      "min_samples_leaf": 61,
+      "reg": 0.021220679257710907
+    },
+    "Weighted Logistic Regression": {
+      "C": 0.0010456620751045397
+    },
+    "Weighted Decision Tree": {
+      "max_depth": 5,
+      "min_samples_leaf": 61
+    },
+    "DBC-CMeans": {
+      "fuzzifier": 1.17,
+      "n_clusters": 29
+    },
+    "Sampling-DBC-CMeans": {
+      "fuzzifier": 1.17,
+      "n_clusters": 29
+    },
+    "DBC-DiagGMM": {
+      "n_components": 39,
+      "reg_covar": 0.4718180085166576
+    },
+    "Sampling-DBC-DiagGMM": {
+      "n_components": 39,
+      "reg_covar": 0.4718180085166576
+    },
+    "DBC-DiagGMM-ClassWise": {
+      "n_components_per_class": 32,
+      "reg_covar": 2.2755692928179276
+    },
+    "Sampling-DBC-DiagGMM-ClassWise": {
+      "n_components_per_class": 32,
+      "reg_covar": 2.2755692928179276
+    },
+    "DBC-Tree-DiagGMM": {
+      "max_depth": 4,
+      "min_samples_leaf": 61,
+      "reg": 0.021220679257710907
+    },
+    "Sampling-DBC-Tree-DiagGMM": {
+      "max_depth": 4,
+      "min_samples_leaf": 61,
+      "reg": 0.021220679257710907
+    }
+  },
+  "loss": [
+    [
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "model_seed": 42,
+  "minimax_eps": 0.001,
+  "alpha": 2,
+  "max_iter": 1000,
+  "folds": 5,
+  "original_repeats": 20,
+  "shift_repeats": 5,
+  "shift_priors": 4,
+  "sdmc_lambdas": [
+    10,
+    30,
+    100,
+    120,
+    300,
+    1000,
+    3000,
+    10000
+  ],
+  "sdmc_tol": 1e-05,
+  "sdmc_max_iter": 50000
+}
