@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spdmc"
+version = "0.1.0"
+description = "Soft Probabilistic Discrete Minimax Classifier"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Wenlong Chen"}, {name = "Cyprien Gilet"}, {name = "Benjamin Quost"}, {name = "Sébastien Destercke"}]
+dependencies = ["numpy>=1.24", "scipy>=1.9.2", "scikit-learn>=1.6", "scikit-fuzzy>=0.5.0"]
+
+[project.optional-dependencies]
+experiments = ["pandas>=2", "matplotlib>=3.7", "optuna>=4", "threadpoolctl>=3"]
+cifar = ["torch>=2", "torchvision>=0.15", "Pillow>=10", "tqdm>=4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dbc*", "spdmc*"]
